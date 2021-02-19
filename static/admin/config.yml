@@ -27,9 +27,9 @@ collections:
     slug: "recipes"
     media_folder: ""
     public_folder: ""
-    path: "{{title}}/index/"
+    path: "{{title}}/index/recipes"
     editor:
-      preview: false
+    preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
