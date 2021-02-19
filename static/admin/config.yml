@@ -20,6 +20,8 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+collections:
   - name: "recipes"
     label: "Recipes"
     folder: "content/recipes"
