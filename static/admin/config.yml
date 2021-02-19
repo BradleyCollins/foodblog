@@ -1,8 +1,9 @@
 backend:
   name: git-gateway
   branch: main
-  media_folder: images/uploads
-  public_folder: /uploads
+
+media_folder: images/uploads
+public_folder: /img
 
 collections:
   - name: "blog"
@@ -10,7 +11,9 @@ collections:
     folder: "content/blog"
     create: true
     slug: "index"
-    path: "{{title}}/index/{{slug}}"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
     editor:
       preview: false
     fields:
