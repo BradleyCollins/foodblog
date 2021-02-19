@@ -2,39 +2,21 @@ backend:
   name: git-gateway
   branch: main
   media_folder: images/uploads
-  public_folder: /public
+  public_folder: /uploads
 
 collections:
-  - Label: "Pages"
-    name: "pages"
-    Files:
-      - name: "blog"
-        label: "Blog"
-        folder: "content/blog"
-        create: true
-        slug: "index"
-        media_folder: images/uploads
-        public_folder: /public
-        path: "{{title}}/blog"
-        editor:
-          preview: false
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Description", name: "description", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - name: "recipes"
-        label: "Recipes"
-        folder: "content/recipes"
-        create: true
-        slug: "recipes"
-        media_folder: images/uploads
-        public_folder: /public
-        path: "{{title}}/recipes"
-        editor:
-        preview: false
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Description", name: "description", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "index"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
