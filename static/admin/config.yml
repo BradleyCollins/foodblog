@@ -21,3 +21,17 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "home"
+    label: "Home"
+    folder: "content/home"
+    create: true
+    slug: "home"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/home"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
